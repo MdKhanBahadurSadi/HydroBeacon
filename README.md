@@ -50,7 +50,7 @@ HydroBeacon is built on modern Android development principles:
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/HydroBeacon.git
+    git clone https://github.com/MdKhanBahadurSadi/HydroBeacon.git
     ```
 
 2.  **Configuration**
@@ -92,5 +92,5 @@ We welcome contributions from the community. Whether it's optimizing the predict
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-**Developed by [Md Khan Bahadur Sadi](https://github.com/YOUR_USERNAME)**  
+**Developed by [Md Khan Bahadur Sadi](https://github.com/MdKhanBahadurSadi)**  
 *Empowering communities through AI-driven safety solutions.*
