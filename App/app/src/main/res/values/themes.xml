@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.HydroBeacon" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+
+        <!-- Status bar and navigation bar. -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor">@color/colorBackground</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+
+        <!-- Other colors -->
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+
+        <!-- Custom Text Appearance -->
+        <item name="textAppearanceHeadline5">@style/TextAppearance.HydroBeacon.Headline</item>
+    </style>
+
+    <!-- Custom Headline Style -->
+    <style name="TextAppearance.HydroBeacon.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">@dimen/text_size_headline</item>
+    </style>
+</resources>
