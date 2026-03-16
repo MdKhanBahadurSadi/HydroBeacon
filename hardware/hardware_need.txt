@@ -1,0 +1,25 @@
+# 🛠️ HydroBeacon Hardware Requirements
+
+To set up the monitoring node for HydroBeacon, you will need the following components and connections.
+
+## 📋 Components List
+1.  **Microcontroller:** ESP8266 (NodeMCU) or ESP32 (Recommended for built-in Wi-Fi).
+2.  **Sensor:** HC-SR04 Ultrasonic Sensor (To measure water distance).
+3.  **Power Supply:** 5V Power Bank or DC Adapter.
+4.  **Connecting Wires:** Jumper wires (M-F / M-M).
+
+## 🔌 Circuit Connection (Typical)
+| HC-SR04 Pin | ESP8266 Pin | ESP32 Pin |
+| :--- | :--- | :--- |
+| **VCC** | 5V / VIN | 5V / VIN |
+| **GND** | GND | GND |
+| **Trig** | D1 (GPIO 5) | GPIO 5 |
+| **Echo** | D2 (GPIO 4) | GPIO 18 |
+
+## ⚙️ Firmware Logic
+1.  **Distance Calculation:** Measure the time for pulse echo and convert to distance (cm).
+2.  **Percentage Mapping:** Convert distance to a percentage (0-100%) based on your container/river depth.
+3.  **Firebase Sync:** Send the percentage and timestamp to your Firebase Realtime Database node: `water_level/current`.
+
+---
+*Note: Make sure to calibrate the 'empty' and 'full' distance constants in your Arduino code for accurate readings.*
